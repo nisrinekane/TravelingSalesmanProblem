@@ -2,6 +2,9 @@
 
 This project implements a genetic algorithm to solve the traveling salesman problem (TSP). Given a list of cities, the objective of the TSP is to find the shortest possible route that visits each city once and returns to the origin city.
 
+![best_route_image](https://github.com/nisrinekane/TravelingSalesmanProblem/blob/main/output/best_route.png)
+
+
 ## Installation
 
 Install Python 3.7 or higher on your system. Install the required packages using pip:
