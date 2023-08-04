@@ -22,23 +22,11 @@ The program will output the best route it found and display a visualization of t
 
 ## How It Works
 
-This implementation uses a genetic algorithm, which is a heuristic that mimics the process of natural selection, to find an efficient solution to the TSP. This process includes mechanisms like selection, crossover (or "mating"), and mutation.
+This implementation uses a genetic algorithm, which is a heuristic that mimics the process of natural selection, to find an efficient solution to the TSP. This process includes mechanisms like selection, crossover (mating) and mutation.
 
 ## Project Structure
 
-* `main.py`: The main script that runs the genetic algorithm and visualizes the results.
-* `genetic_algorithm.py`: Contains the implementation of the genetic algorithm.
-* `visualization.py`: Contains functions for visualizing the route.
-* `city.py`: A helper class for representing a city.
-* `route.py`: A helper class for representing a route between cities.
-* `fitness.py`: A helper class for evaluating the fitness of a route.
+* `tsp.py`: Contains the implementation of the genetic algorithm including the main evolutionary loop.
+* `visualize.py`: Contains function for visualizing the route using matplotlib.
+* `cities.csv`: Contains city names and their x and y coordinates, you can customize it using the `cities_generator.py` script.
 
-## Limitations
-
-This implementation does not guarantee finding the optimal solution. Genetic algorithms generally provide good approximations for the TSP, but they do not always find the most efficient route.
-
----
-
-Regarding whether the project is ready to be pushed, you should first ensure that you have tested the program with various inputs and in different scenarios to confirm that it works as expected. It would also be a good idea to add some comments in the code explaining the logic, especially for complex parts. Lastly, make sure you have removed any unnecessary print statements or debug code.
-
-From a features perspective, if you are satisfied with the functionality of the project (it can solve the TSP with reasonable accuracy and efficiency, and it can visualize the resulting route), then it sounds like it's ready to be pushed. Remember, you can always make improvements and push updates later.
